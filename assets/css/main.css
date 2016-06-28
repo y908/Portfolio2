@@ -79,7 +79,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #ff3ae3;
     text-decoration: none;
     outline: 0;
 }
@@ -124,7 +124,7 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #222222;
+	color: #ff3ae3;
 }
 
 .BBB{
@@ -268,5 +268,5 @@ bt {
 
 .glyphicon {
 	font-size: 40px;
-	color: #1abc9c;
+	color: #eb6800;
 }
