@@ -12,9 +12,10 @@
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 200;
+    font-size: 25px;
     color: #555;
+   
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -56,6 +57,8 @@ a {
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
+
+    margin-right: 50px;
 }
 
 a:hover,
@@ -95,7 +98,8 @@ a:after {
 }
 
 .navbar-inverse {
-	background-color: #cc8200;
+	background-image: url("../img/banner.jpg");
+
 
 }
 
@@ -107,10 +111,20 @@ a:after {
 	color: #222222;
 }
 
+.BBB{
+  padding: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+
+  z-index: 0px;
+}
+
+
 .navbar-brand {
-	font-weight: 700;
-	font-size: 20px;
+	font-weight: 600;
+	font-size: 40px;
 	letter-spacing: 2px;
+  text-shadow: 2px 2px 1px #000000;
 }
 
 .navbar-inverse .navbar-brand {
@@ -213,8 +227,8 @@ bt {
     position:relative; 
     overflow:hidden; 
     background:transparent url(../img/loader.gif) no-repeat center;
-}
 
+}
 
     .zoomOverlay {
         position:absolute;
