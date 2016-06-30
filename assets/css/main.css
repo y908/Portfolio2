@@ -12,14 +12,117 @@
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 25px;
+    font-weight: 50;
+    font-size: 20px;
     color: #555;
    
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
+
+
+/*========IMAGES==========*/
+
+@font-face{font-family:'Calluna';
+ src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+}
+
+#columns {
+  column-width: 320px;
+  column-gap: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+div#columns figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+  width: 100%; height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-size: 2rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+div#columns small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
+
+/*========IMAGES==========*/
+
+
+/* dropdown of the menu */
+
+  ul .submenu {
+    display: block;
+    list-style-type: none;  /* removes the bullet */
+  }
+
+  #temp1:hover .submenu {
+    display: inline-block;
+    position: relative;
+  }
+
+    /* change the 850px for correct mobile behavior */
+@media screen and (min-width: 850px){ 
+
+  ul .submenu {
+    display: none;
+
+    list-style-type: none;  /* removes the bullet */
+  }
+
+
+  #temp1:hover .submenu {
+    display: inline-block;
+    position: absolute;
+
+      margin-left: -26px;
+      line-height: 60px;
+      background-color: #000000;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+}
+
+/* end of dropdown of the menu */
+
 
 
  .fish {

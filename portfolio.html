@@ -8,6 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
+
+
     <title>Yana Yakubchik</title>
 
     <!-- Bootstrap core CSS -->
@@ -40,15 +42,27 @@
           </button>
           <a class="navbar-brand" href="index.html">Yana Yakubchik</a>
         </div>
+
+
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Work</a></li>
+            <li><a href="index.html">About</a></li>          
+            <li id="temp1"><a href="portfolio.html">Work</a>
+
+              <ul class="submenu">
+                <li><a href="portfolio.html">DevWork</a></li>       
+                <li><a href="artwork.html">Illustrations</a></li>
+                <li><a href="artwork.html">Children's Art</a></li>
+                <li><a href="artwork.html">Paintings/Textile</a></li>
+              </ul>
+
+            </li>  
+
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
-    </div>
+      </div> <!-- BBB -->
+    </div><!-- navbar navbar-inverse navbar-static-top" -->
 	
 	
 	<!-- +++++ Projects Section +++++ -->
@@ -56,59 +70,78 @@
 	<div class="container pt">
 		<div class="row mt">
 			<div class="col-lg-6 col-lg-offset-3 centered">
-				<h3>MY WORK</h3>
+				<h3>Developer Work</h3>
 				<hr>
 				<p></p>
 			</div>
-		</div>
-		<div class="row mt centered">	
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/1.png" alt=""></a>
-				<p>Web Projects</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/2.png" alt=""></a>
-				<p>Artwork</p>
-			</div>
-        <div class="col-lg-4">
-        <a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/2.png" alt=""></a>
-        <p>Artwork</p>
-      </div>
-		</div><!-- /row -->
 		
-				<!--space to put more images later -->
+
+    <div id="columns">
+      <figure>
+      <a href="http://lit-tundra-38492.herokuapp.com/" target="_blank"><img src="assets/img/websites/trivia.png">
+      <figcaption>Simple Trivia Game</figcaption>
+      </figure>
+      
+      <figure>
+       <a href="http://obscure-island-63678.herokuapp.com/" target="_blank"><img src="assets/img/websites/hangman.png">
+      <figcaption>Guess the Word Game</figcaption>
+      </figure>
 
 
+      <figure>
+      <a href="http://shielded-cove-96848.herokuapp.com/" target="_blank"><img src="assets/img/websites/world.png">
+      <figcaption>World Pics - See pictures from around the world</figcaption>
+      </figure>
+
+
+      <figure>
+      <a href="http://mysterious-anchorage-48533.herokuapp.com/" target="_blank"><img src="assets/img/websites/crystal.png">
+      <figcaption>Number Guessing Game</figcaption>
+      </figure>
+
+
+      <figure>
+      <a href="http://vast-chamber-87972.herokuapp.com/" target="_blank"><img src="assets/img/websites/chef.png">
+      <figcaption>Chef Search - See gifs of famous chefs</figcaption>
+      </figure>
+
+      <figure>
+      <a href="http://secret-wildwood-23509.herokuapp.com/" target="_blank"><img src="assets/img/websites/train.png">
+      <figcaption>Train Schedual Form</figcaption>
+      </figure>
+    </div> <!-- end of columns div -->
+
+	
+				
 		</div><!-- /row -->
 	</div><!-- /container -->
 	
 	
 	<!-- +++++ Footer Section +++++ -->
 
-<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h4>Find me on:</h4>
-					<p>
-						<a href="https://github.com/y908">GitHub</a><br/>
-						<a href="https://twitter.com/yana_y908">Twitter</a><br/>
-						<a href="https://www.linkedin.com/in/yetzenialeiva?trk=hp-identity-name">LinkedIn</a>
-					</p>
-				</div><!-- /col-lg-4 -->
-				
-				<div class="col-lg-4">
-				</div><!-- /col-lg-4 -->
-				
-				<div class="col-lg-4">
-					 <div class="fish" align="center">   Thanks for viewing my page!</div>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Find me on:</h4>
+          <p>
+            <a href="https://github.com/y908">GitHub</a><br/>
+            <a href="https://twitter.com/yana_y908">Twitter</a><br/>
+            <a href="https://www.linkedin.com/in/yetzenialeiva?trk=hp-identity-name">LinkedIn</a>
+          </p>
+        </div><!-- /col-lg-4 -->
+        
+        <div class="col-lg-4">
+        </div><!-- /col-lg-4 -->
+        
+        <div class="col-lg-4">
+            <div class="fish" align="center">   Thanks for viewing my page!</div>
             <img src="assets/img/fish.gif" alt="fish" class="fishGif" style="width:350px;height:200px;">
-				</div><!-- /col-lg-4 -->
-			
-			</div>
-		</div>
-	</div>
-
+        </div><!-- /col-lg-4 -->
+      
+      </div>
+    </div>
+  </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
